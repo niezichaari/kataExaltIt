@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getAllBeers } from '../services/beerService';
 import { beerSliceActions } from '../store/beer-slice';
-import { Button, Col, Container, Form, FormControl, Nav, Pagination, Row, Table } from 'react-bootstrap';
+import { Button, Col, Container, Form, FormControl, Pagination, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import BeerList from './BeerList';
 import { Link } from 'react-router-dom';
@@ -20,6 +20,11 @@ function App() {
   const dispatch = useDispatch()
   let paginationItems = [];
 
+  /**
+   * Create & Update Pagination
+   *
+   * @param {object} beerToPaginate
+   */
   const UpdatePagination = (beerToPaginate) => {
     paginationItems = [];
     if (beerToPaginate) {
@@ -36,6 +41,9 @@ function App() {
     }
   }
 
+  /**
+  update Pagination if search beer activated
+   */
   if (!filtredBeer) {
     UpdatePagination(beers)
   }

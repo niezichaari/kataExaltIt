@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { Button, Card, Container, Table } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { Button, Container, Table } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const BeerCart = (props) => {

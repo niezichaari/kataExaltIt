@@ -33,9 +33,7 @@ const BeerDetails = (props) => {
                 <Card>
                     <Card.Header>
                         <Card.Title>{beer.name} {checkCart(beer, orders) ? <Badge bg="success">Ordered</Badge> : null}</Card.Title>
-
                     </Card.Header>
-
                     <Card.Body>
                         <Card.Img variant="top" className="beerPhotoLg img-fluid" src={beer.image_url} />
                         <Table striped bordered hover>
@@ -50,7 +48,6 @@ const BeerDetails = (props) => {
                                     <td>Volume</td>
                                     <td>{beer.volume.value}/{beer.volume.unit}</td>
                                 </tr>
-
                                 <tr>
                                     <td>Ingredients</td>
                                     <td>
@@ -66,7 +63,6 @@ const BeerDetails = (props) => {
                                 </tr>
                                 <tr>
                                     <td>Brewers tips</td>
-
                                     <td>{beer.brewers_tips}</td>
                                 </tr>
                             </tbody>

@@ -10,5 +10,4 @@ export const checkCart = (beer, orders) => {
         cartCheckResult = orders.find(order => order.id === beer.id)
     }
     return cartCheckResult
-
 }

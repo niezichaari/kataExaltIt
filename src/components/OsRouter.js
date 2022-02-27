@@ -12,10 +12,7 @@ const OsRouter = (props) => {
                     <Route path="/beerList" component={App} exact />
                     <Route path="/details" component={BeerDetails} exact />
                     <Route path="/beerCart" component={BeerCart} exact />
-
                     <Route path="*" component={App} exact />
-
-
                 </Switch>
             </React.Fragment>
         </BrowserRouter>
