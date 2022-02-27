@@ -1,0 +1,14 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.beerPhoto {
+  max-height: 80px;
+  max-width: 60px;
+}
+
+.beerPhotoLg {
+  max-height: 300px;
+  max-width: 200px;
+}
