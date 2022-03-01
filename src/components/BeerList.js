@@ -18,6 +18,7 @@ const BeerList = (props) => {
         }
     }, [beers, props.beers]);
 
+    console.log(JSON.parse(localStorage.getItem("beer")));
     return (
         <Table striped bordered hover>
             <thead>

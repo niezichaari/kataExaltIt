@@ -1,11 +1,11 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { getAllBeers } from '../services/beerService';
-import { beerSliceActions } from '../store/beer-slice';
+import { getAllBeers } from './services/beerService';
+import { beerSliceActions } from './store/beer-slice';
 import { Button, Col, Container, Form, FormControl, Pagination, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
-import BeerList from './BeerList';
+import BeerList from './components/BeerList';
 import { Link } from 'react-router-dom';
 
 
