@@ -24,6 +24,15 @@ const BeerCart = (props) => {
                             <td>
                                 <img className='beerPhoto' src={beer.image_url} alt="beer" />
                             </td>
+                            <td>
+                                <Link to={{
+                                    pathname: '/details',
+                                    state: { beer: beer }
+                                }} >
+                                    <Button variant="primary"
+                                    >Details</Button>
+                                </Link>
+                            </td>
                         </tr>)
                         }
                     </tbody>
